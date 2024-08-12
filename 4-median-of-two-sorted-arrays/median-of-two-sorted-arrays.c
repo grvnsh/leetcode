@@ -21,12 +21,10 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
     int j = 0;
     while (i < nums1Size) {
         arr[i] = nums1[i];
-        printf("%d ok\n", arr[i]);
         i++;
     }
     while (j < nums2Size) {
         arr[j+nums1Size] = nums2[j];
-        printf("%d bad\n", arr[i]);
         j++;
     }
     selectionSort(arr, len);
