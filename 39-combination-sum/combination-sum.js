@@ -4,10 +4,10 @@
  * @return {number[][]}
  */
 var combinationSum = function(candidates, target) {
-    const result = [];
+    const arr = [];
     function rev(start, sum, path) {
         if (sum === target) {
-            result.push([...path]);
+            arr.push([...path]);
             return;
         }
         if (sum > target) {
@@ -20,5 +20,5 @@ var combinationSum = function(candidates, target) {
         }
     }
     rev(0, 0, []);
-    return result;
+    return arr;
 };
