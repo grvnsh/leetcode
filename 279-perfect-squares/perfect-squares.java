@@ -9,7 +9,7 @@ class Solution {
             return 1;
         }
         int[] a = new int[n + 1];
-        Arrays.fill(a, n);  // Initialize with n instead of Integer.MAX_VALUE
+        Arrays.fill(a, n); 
         a[0] = 0;
         List<Integer> square = new ArrayList<>();
         for (int i = 1; i * i <= n; i++) {
