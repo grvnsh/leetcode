@@ -37,15 +37,15 @@ char** letterCombinations(char* digits, int* returnSize) {
             }
         }
     }
-    int validCount = 0;
+    int same = 0;
     for (int i = 0; i < count; i++) {
         if (strlen(ans[i]) == strlen(digits)) {
-            ans[validCount++] = ans[i];
+            ans[same++] = ans[i];
         } else {
             free(ans[i]);
         }
     }
-    count = validCount;
+    count = same;
     *returnSize = count;
     return ans;
 }
